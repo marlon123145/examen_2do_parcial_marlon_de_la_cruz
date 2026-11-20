@@ -25,15 +25,12 @@ Este proyecto fue realizado como parte del segundo parcial de Programación Bás
 - Listado de alquileres y cálculo del total a pagar.
 - Opciones para agregar, eliminar y limpiar registros.
 
-## Tecnologías utilizadas
-
-- C#
-- Windows Forms
-- .NET 8
-- Visual Studio 2022
 
 ## Conclusión
 
 Este proyecto me permitió fortalecer mis conocimientos en C#, especialmente en el manejo de formularios, controles, eventos y operaciones matemáticas aplicadas a un sistema de alquiler de vehículos.
+
+ejecucion del proyecto:
+
 
 
