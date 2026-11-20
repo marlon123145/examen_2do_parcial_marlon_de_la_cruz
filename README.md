@@ -30,7 +30,9 @@ Este proyecto fue realizado como parte del segundo parcial de Programación Bás
 
 Este proyecto me permitió fortalecer mis conocimientos en C#, especialmente en el manejo de formularios, controles, eventos y operaciones matemáticas aplicadas a un sistema de alquiler de vehículos.
 
+
 ## Ejecución del proyecto
 
-![Ejecución del proyecto](ejecucion%20del%20proyecto.png)
+![Ejecución del proyecto](ejecucion%2520del%2520proyecto.png)
+
 
