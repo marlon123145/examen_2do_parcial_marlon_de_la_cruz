@@ -1,0 +1,142 @@
+using System;
+using System.Drawing;
+using System.Windows.Forms;
+
+namespace examen_marlon_de_la_cruz
+{
+    partial class frmAlquiler
+    {
+private System.ComponentModel.IContainer components = null;
+private Label lblCliente;
+private Label lblSalida;
+private Label lblVehiculo;
+private Label lblTarifa;
+private Label lblDias;
+private Label lblEncabezado;
+private Label lblSubtotal;
+private Label lblDescuento;
+private Label lblDomicilio;
+private Label lblItbis;
+private Label lblTotal;
+private TextBox txtCliente;
+private TextBox txtVehiculo;
+private TextBox txtTarifa;
+private TextBox txtSubtotal;
+private TextBox txtDescuento;
+private TextBox txtDomicilio;
+private TextBox txtItbis;
+private TextBox txtTotal;
+private Button btnAgregar;
+private Button btnCalcular;
+private Button btnLimpiar;
+private Button btnSalir;
+private DateTimePicker dtpSalida;
+private NumericUpDown nudDias;
+private CheckBox chkCorporativo, chkGps;
+private GroupBox grpSeguro, grpEntrega;
+private RadioButton rbBasico, rbCompleto, rbSucursal, rbDomicilio;
+private ListView lstAlquileres;
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && components != null) components.Dispose();
+            base.Dispose(disposing);
+        }
+        private void InitializeComponent()
+        {
+            SuspendLayout();
+            lblCliente = new Label();
+            lblSalida = new Label();
+            lblVehiculo = new Label();
+            lblTarifa = new Label();
+            lblDias = new Label();
+            lblEncabezado = new Label();
+            lblSubtotal = new Label();
+            lblDescuento = new Label();
+            lblDomicilio = new Label();
+            lblItbis = new Label();
+            lblTotal = new Label();
+            txtCliente = new TextBox();
+            txtVehiculo = new TextBox();
+            txtTarifa = new TextBox();
+            txtSubtotal = new TextBox();
+            txtDescuento = new TextBox();
+            txtDomicilio = new TextBox();
+            txtItbis = new TextBox();
+            txtTotal = new TextBox();
+            btnAgregar = new Button();
+            btnCalcular = new Button();
+            btnLimpiar = new Button();
+            btnSalir = new Button();
+            lblCliente.Name = "lblCliente"; lblCliente.Text = "Cliente:"; lblCliente.Location = new Point(16, 30); lblCliente.Size = new Size(70, 27); lblCliente.TextAlign = ContentAlignment.MiddleLeft;
+            Controls.Add(lblCliente);
+            lblSalida.Name = "lblSalida"; lblSalida.Text = "Salida:"; lblSalida.Location = new Point(16, 108); lblSalida.Size = new Size(70, 27); lblSalida.TextAlign = ContentAlignment.MiddleLeft;
+            Controls.Add(lblSalida);
+            lblVehiculo.Name = "lblVehiculo"; lblVehiculo.Text = "Vehículo:"; lblVehiculo.Location = new Point(16, 161); lblVehiculo.Size = new Size(70, 27); lblVehiculo.TextAlign = ContentAlignment.MiddleLeft;
+            Controls.Add(lblVehiculo);
+            lblTarifa.Name = "lblTarifa"; lblTarifa.Text = "Tarifa:"; lblTarifa.Location = new Point(16, 207); lblTarifa.Size = new Size(70, 27); lblTarifa.TextAlign = ContentAlignment.MiddleLeft;
+            Controls.Add(lblTarifa);
+            lblDias.Name = "lblDias"; lblDias.Text = "Días:"; lblDias.Location = new Point(16, 253); lblDias.Size = new Size(70, 27); lblDias.TextAlign = ContentAlignment.MiddleLeft;
+            Controls.Add(lblDias);
+            lblEncabezado.Name = "lblEncabezado"; lblEncabezado.Text = "Vehículos alquilados"; lblEncabezado.Location = new Point(520, 26); lblEncabezado.Size = new Size(230, 27); lblEncabezado.TextAlign = ContentAlignment.MiddleLeft;
+            Controls.Add(lblEncabezado);
+            lblSubtotal.Name = "lblSubtotal"; lblSubtotal.Text = "Subtotal"; lblSubtotal.Location = new Point(520, 338); lblSubtotal.Size = new Size(110, 27); lblSubtotal.TextAlign = ContentAlignment.MiddleLeft;
+            Controls.Add(lblSubtotal);
+            lblDescuento.Name = "lblDescuento"; lblDescuento.Text = "Descuento"; lblDescuento.Location = new Point(520, 376); lblDescuento.Size = new Size(110, 27); lblDescuento.TextAlign = ContentAlignment.MiddleLeft;
+            Controls.Add(lblDescuento);
+            lblDomicilio.Name = "lblDomicilio"; lblDomicilio.Text = "Domicilio"; lblDomicilio.Location = new Point(520, 414); lblDomicilio.Size = new Size(110, 27); lblDomicilio.TextAlign = ContentAlignment.MiddleLeft;
+            Controls.Add(lblDomicilio);
+            lblItbis.Name = "lblItbis"; lblItbis.Text = "ITBIS (18%)"; lblItbis.Location = new Point(520, 452); lblItbis.Size = new Size(110, 27); lblItbis.TextAlign = ContentAlignment.MiddleLeft;
+            Controls.Add(lblItbis);
+            lblTotal.Name = "lblTotal"; lblTotal.Text = "TOTAL A PAGAR"; lblTotal.Location = new Point(500, 495); lblTotal.Size = new Size(130, 27); lblTotal.TextAlign = ContentAlignment.MiddleLeft;
+            Controls.Add(lblTotal);
+            txtCliente.Name = "txtCliente"; txtCliente.Location = new Point(91, 28); txtCliente.Size = new Size(270, 27);
+            Controls.Add(txtCliente);
+            txtVehiculo.Name = "txtVehiculo"; txtVehiculo.Location = new Point(91, 159); txtVehiculo.Size = new Size(270, 27);
+            Controls.Add(txtVehiculo);
+            txtTarifa.Name = "txtTarifa"; txtTarifa.Location = new Point(91, 205); txtTarifa.Size = new Size(145, 27);
+            Controls.Add(txtTarifa);
+            txtSubtotal.Name = "txtSubtotal"; txtSubtotal.Location = new Point(650, 335); txtSubtotal.Size = new Size(160, 27);
+            txtSubtotal.ReadOnly = true; txtSubtotal.TextAlign = HorizontalAlignment.Right; txtSubtotal.BackColor = Color.White;
+            Controls.Add(txtSubtotal);
+            txtDescuento.Name = "txtDescuento"; txtDescuento.Location = new Point(650, 373); txtDescuento.Size = new Size(160, 27);
+            txtDescuento.ReadOnly = true; txtDescuento.TextAlign = HorizontalAlignment.Right; txtDescuento.BackColor = Color.White;
+            Controls.Add(txtDescuento);
+            txtDomicilio.Name = "txtDomicilio"; txtDomicilio.Location = new Point(650, 411); txtDomicilio.Size = new Size(160, 27);
+            txtDomicilio.ReadOnly = true; txtDomicilio.TextAlign = HorizontalAlignment.Right; txtDomicilio.BackColor = Color.White;
+            Controls.Add(txtDomicilio);
+            txtItbis.Name = "txtItbis"; txtItbis.Location = new Point(650, 449); txtItbis.Size = new Size(160, 27);
+            txtItbis.ReadOnly = true; txtItbis.TextAlign = HorizontalAlignment.Right; txtItbis.BackColor = Color.White;
+            Controls.Add(txtItbis);
+            txtTotal.Name = "txtTotal"; txtTotal.Location = new Point(650, 487); txtTotal.Size = new Size(160, 27);
+            txtTotal.ReadOnly = true; txtTotal.TextAlign = HorizontalAlignment.Right; txtTotal.BackColor = Color.White;
+            Controls.Add(txtTotal);
+            btnAgregar.Name = "btnAgregar"; btnAgregar.Text = "Agregar al alquiler"; btnAgregar.Location = new Point(555, 69); btnAgregar.Size = new Size(225, 34); btnAgregar.UseVisualStyleBackColor = true;
+            btnAgregar.Click += btnAgregar_Click; Controls.Add(btnAgregar);
+            btnCalcular.Name = "btnCalcular"; btnCalcular.Text = "Calcular total"; btnCalcular.Location = new Point(16, 493); btnCalcular.Size = new Size(145, 34); btnCalcular.UseVisualStyleBackColor = true;
+            btnCalcular.Click += btnCalcular_Click; Controls.Add(btnCalcular);
+            btnLimpiar.Name = "btnLimpiar"; btnLimpiar.Text = "Nuevo alquiler"; btnLimpiar.Location = new Point(176, 493); btnLimpiar.Size = new Size(145, 34); btnLimpiar.UseVisualStyleBackColor = true;
+            btnLimpiar.Click += btnLimpiar_Click; Controls.Add(btnLimpiar);
+            btnSalir.Name = "btnSalir"; btnSalir.Text = "Salir"; btnSalir.Location = new Point(336, 493); btnSalir.Size = new Size(110, 34); btnSalir.UseVisualStyleBackColor = true;
+            btnSalir.Click += btnSalir_Click; Controls.Add(btnSalir);
+            chkCorporativo = new CheckBox(); chkCorporativo.Name = "chkCorporativo"; chkCorporativo.Text = "Cliente corporativo"; chkCorporativo.Location = new Point(91, 65); chkCorporativo.AutoSize = true; Controls.Add(chkCorporativo);
+            dtpSalida = new DateTimePicker(); dtpSalida.Name = "dtpSalida"; dtpSalida.Format = DateTimePickerFormat.Short; dtpSalida.Location = new Point(91, 107); dtpSalida.Size = new Size(160, 27); Controls.Add(dtpSalida);
+            nudDias = new NumericUpDown(); nudDias.Name = "nudDias"; nudDias.Location = new Point(91, 252); nudDias.Size = new Size(110, 27); Controls.Add(nudDias);
+            grpSeguro = new GroupBox(); grpSeguro.Name = "grpSeguro"; grpSeguro.Text = "Seguro"; grpSeguro.Location = new Point(16, 305); grpSeguro.Size = new Size(214, 112);
+            rbBasico = new RadioButton(); rbBasico.Name = "rbBasico"; rbBasico.Text = "Básico"; rbBasico.Location = new Point(12, 29); rbBasico.AutoSize = true; grpSeguro.Controls.Add(rbBasico);
+            rbCompleto = new RadioButton(); rbCompleto.Name = "rbCompleto"; rbCompleto.Text = "Completo (+RD$300/día)"; rbCompleto.Location = new Point(12, 65); rbCompleto.AutoSize = true; grpSeguro.Controls.Add(rbCompleto); Controls.Add(grpSeguro);
+            grpEntrega = new GroupBox(); grpEntrega.Name = "grpEntrega"; grpEntrega.Text = "Entrega"; grpEntrega.Location = new Point(246, 305); grpEntrega.Size = new Size(216, 112);
+            rbSucursal = new RadioButton(); rbSucursal.Name = "rbSucursal"; rbSucursal.Text = "En sucursal"; rbSucursal.Location = new Point(12, 29); rbSucursal.AutoSize = true; grpEntrega.Controls.Add(rbSucursal);
+            rbDomicilio = new RadioButton(); rbDomicilio.Name = "rbDomicilio"; rbDomicilio.Text = "Domicilio (+RD$500)"; rbDomicilio.Location = new Point(12, 65); rbDomicilio.AutoSize = true; grpEntrega.Controls.Add(rbDomicilio); Controls.Add(grpEntrega);
+            chkGps = new CheckBox(); chkGps.Name = "chkGps"; chkGps.Text = "GPS (+RD$100 por día)"; chkGps.Location = new Point(18, 435); chkGps.AutoSize = true; Controls.Add(chkGps);
+            lstAlquileres = new ListView(); lstAlquileres.Name = "lstAlquileres"; lstAlquileres.Location = new Point(520, 125); lstAlquileres.Size = new Size(380, 195); lstAlquileres.View = View.Details; lstAlquileres.FullRowSelect = true; lstAlquileres.GridLines = true;
+            lstAlquileres.Columns.Add("Días", 48);
+            lstAlquileres.Columns.Add("Vehículo", 132);
+            lstAlquileres.Columns.Add("Tarifa", 90);
+            lstAlquileres.Columns.Add("Total", 105);
+            lstAlquileres.DoubleClick += lstAlquileres_DoubleClick; Controls.Add(lstAlquileres);
+            AutoScaleMode = AutoScaleMode.Font; ClientSize = new Size(930, 555); BackColor = Color.FromArgb(241, 243, 246); Font = new Font("Segoe UI", 9F);
+            FormBorderStyle = FormBorderStyle.FixedSingle; MaximizeBox = false; StartPosition = FormStartPosition.CenterScreen; Name = "frmAlquiler"; Text = "RentCar Express - Alquileres";
+            FormClosing += frmAlquiler_FormClosing; ResumeLayout(false); PerformLayout();
+        }
+    }
+}
