@@ -26,9 +26,7 @@ Este proyecto fue realizado como parte del segundo parcial de Programación Bás
 - Opciones para agregar, eliminar y limpiar registros.
 
 
-## Conclusión
 
-Este proyecto me permitió fortalecer mis conocimientos en C#, especialmente en el manejo de formularios, controles, eventos y operaciones matemáticas aplicadas a un sistema de alquiler de vehículos.
 
 
 ## Ejecución del proyecto
